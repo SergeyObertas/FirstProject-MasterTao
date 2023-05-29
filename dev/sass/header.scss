@@ -24,6 +24,7 @@ header {
         display: flex;
         justify-content: space-between;
         margin: 0 auto;
+        padding-top: 5px;
 
         .nav-link {
             &.active {
@@ -37,7 +38,7 @@ header {
     }
 
     .btn {
-        padding: 13px 26.6px;
+        padding: 13px 27.9px;
         margin-left: 16px;
         white-space: nowrap;
     }

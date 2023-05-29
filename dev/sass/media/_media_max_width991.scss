@@ -1,39 +1,93 @@
 @media screen and (max-width: 991px) {
-    .container {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-
     header {
         .navbar {
             padding-top: 19px;
             padding-bottom: 17px;
         }
 
+        .navbar-expand-lg {
+            padding-left: 20px;
+            padding-right: 14px;
+        }
+
+        .logo_header {
+            margin-left: -12px;
+        }
+
         .navbar-nav {
             text-align: center;
-            padding: 37px 0 34px;
+            padding: 34px 0 28px;
         }
 
         .nav-link {
             font-size: 24px;
-            line-height: 222%;
+            line-height: 200%;
             text-align: center;
             color: #FFFFFF;
         }
 
         .navbar-collapse {
-          background-color: #363A4D;
-          margin: 0 -40px 0;
-          padding: 0 40px;
-          transition: .3s;
-          transform: translate(0, 15px);
+            background-color: #363A4D;
+            margin: 0 -40px 0;
+            padding: 0 40px;
+            transition: .3s;
+            transform: translate(0, 15px);
+            text-align: center;
         }
+
         .btn {
-          justify-content: center;
-          margin: 0 0 60px;
-          width: 100%;
-          padding: 22px 26.7px;
-      }
+            justify-content: center;
+            margin: 0 0 60px;
+            width: 98%;
+            padding: 22px 26.7px;
+            max-width: 295px;
+        }
+
+        .navbar-toggler {
+            margin-right: -11px;
+        }
+    }
+
+    .first-screen {
+        text-align: center;
+        
+        &__title {
+           font-size: 32px; 
+           margin: 0 auto 10px;
+           max-width: 295px;
+        }
+        
+        &__subtitle {
+           font-size: 16px;
+           margin: 0 auto 18px;
+           max-width: 275px
+        }
+        .slick-list {
+            margin: 0 -20px; 
+            border-radius: 0; 
+        }
+        .slick-slide {
+            border-radius: 0;
+            height: calc(100vh - 72px);
+            padding: 26vh 0 228px;
+
+            &:before {
+                content: "";
+                left: 0;
+                top: 0;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(180deg, rgb(4 5 17 / 1%), rgb(4 5 17 / 15%));
+            }
+            .container {
+                z-index: 1; 
+                position: relative;
+            }
+        }
+        .btn-lg {
+          letter-spacing: 0.3px;
+        }
+
     }
 }
