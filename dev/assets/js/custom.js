@@ -20,3 +20,24 @@ $(document).ready(function() {
 
     });
 });
+
+
+
+function checkboxContainerPadding() {
+    const checkButton1 = document.querySelector('.check-button');
+    const checkButton2 = document.querySelectorAll('.check-button');
+    console.log(checkButton1);
+    console.log(checkButton2);
+
+
+    checkButton2.forEach(item => {
+        item.closest('[class*=col]').classList.add('padding-top');
+    })
+
+}
+
+if (document.querySelector(".calculation-form")) {
+    checkboxContainerPadding()
+} else {
+    null
+}
