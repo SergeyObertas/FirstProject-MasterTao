@@ -51,11 +51,42 @@ mobileOnlySlider(".advantages-slider", true, false, 991);
     }
     
     // Mobile Only Slider
-
+    $('.slider-template').slick({
+      dots: false,
+      speed: 300,
+      arrows: true,
+      
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      responsive: [{
+              breakpoint: 1400,
+              settings: {
+                  slidesToShow: 2,
+                 
+                  arrows: true,
+              }
+          },
+          {
+              breakpoint: 991,
+              settings: {
+                  slidesToShow: 1,
+                 
+              }
+          },
+          {
+              breakpoint: 575,
+              settings: {
+                  slidesToShow: 1,
+                  arrows: false,
+                  dots: true,
+              }
+          }
+      
     // $('.navbar-toggler').on('click', function(){
     // $('.navbar').toggleClass('margin-bottom')
     // });
-
+  ]
+});
 
 
 
