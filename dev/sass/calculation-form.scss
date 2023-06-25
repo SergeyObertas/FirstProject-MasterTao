@@ -37,10 +37,23 @@
     }
 }
 
+.input-box {
+    margin-bottom: 20px;
+
+    label {
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 126%;
+    }
+}
+
+
+
 input {
 
     &[type="text"],
-    &[type="number"] {
+    &[type="number"],
+    &[type="email"] {
         background: #FFFFFF;
         border-radius: 10px;
         font-weight: 400;
