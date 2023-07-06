@@ -43,7 +43,7 @@
                 display: flex;
                 width: 100%;
                 margin-top: 39px;
-        
+
                 .icon {
                     margin: 0 -14px 0 auto;
                 }
@@ -80,6 +80,7 @@
 
         .cooperation-content {
             max-width: 528px;
+            text-align: justify;
 
             p {
                 font-weight: 300;
@@ -96,6 +97,11 @@
         }
 
     }
+
+    .about-company-content {
+        text-align: justify;
+    }
+
 
     .about-company {
         .about-company-img_box {

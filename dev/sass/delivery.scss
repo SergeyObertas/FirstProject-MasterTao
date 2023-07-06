@@ -100,7 +100,7 @@
 .services {
     .slider-template {
       .slick-slide {
-              padding: 0 45px 27px;
+              padding: 0 30px 27px;
               position: relative;
               height: 482px;
               display: flex;
@@ -144,7 +144,16 @@
     .slider-template_title,
     .slider-template_description,
     .slider-template_btn-row {
+                display: flex;
                 padding: 0 15px;
+            }
+
+            .slider-template_btn-row {
+                .btn {
+                    width: 51%;
+                    justify-content: center;
+                }
+                
             }
 }
 
